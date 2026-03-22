@@ -1,1 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Privacy Policy | Pashto Quran  - ASDC</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      background: linear-gradient(145deg, #f7f9fc 0%, #eef2f7 100%);
+      font-family: system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Noto Sans', sans-serif;
+      line-height: 1.5;
+      color: #1a2c3e;
+      padding: 2rem 1rem;
+    }
+
+    /* elegant card container */
+    .privacy-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 2rem;
+      box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.02);
+      overflow: hidden;
+      transition: all 0.2s ease;
+    }
+
+    /* header section with subtle islamic-inspired pattern */
+    .policy-header {
+      background: linear-gradient(135deg, #0b2b26 0%, #1c4e3f 100%);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .policy-header h1 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      background: linear-gradient(to right, #f9f3d9, #e9f5e6);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      margin-bottom: 0.75rem;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+
+    .last-updated {
+      font-size: 0.9rem;
+      color: #cbdcd6;
+      background: rgba(255,255,255,0.08);
+      display: inline-block;
+      padding: 0.3rem 1rem;
+      border-radius: 60px;
+      backdrop-filter: blur(2px);
+      font-weight: 450;
+    }
+
+    .app-badge {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #d9e3db;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .app-badge span {
+      background: rgba(255,255,240,0.12);
+      padding: 0.2rem 0.9rem;
+      border-radius: 30px;
+      font-size: 0.8rem;
+    }
+
+    /* main content area */
+    .policy-content {
+      padding: 2rem 2rem 2.5rem 2rem;
+    }
+
+    /* each section styling */
+    .policy-section {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #e4e9f0;
+      padding-bottom: 1.8rem;
+    }
+
+    .policy-section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #1a4b3a;
+      margin-bottom: 1rem;
+      letter-spacing: -0.2px;
+    }
+
+    .section-icon {
+      font-size: 1.7rem;
+      font-weight: 400;
+    }
+
+    .section-title h2 {
+      font-size: 1.55rem;
+      font-weight: 600;
+      margin: 0;
+      color: #0f3a2f;
+    }
+
+    .policy-text {
+      color: #2c3f4d;
+      font-size: 1rem;
+      margin-bottom: 0.75rem;
+      line-height: 1.6;
+    }
+
+    .policy-sub {
+      margin-left: 1rem;
+      margin-top: 0.5rem;
+      padding-left: 0.5rem;
+      border-left: 3px solid #cbdcd2;
+    }
+
+    .permission-list, .usage-list, .rights-list {
+      list-style-type: none;
+      margin: 0.75rem 0 0.5rem 0;
+    }
+
+    .permission-list li, .usage-list li, .rights-list li {
+      margin-bottom: 0.7rem;
+      padding-left: 1.8rem;
+      position: relative;
+      font-size: 0.98rem;
+    }
+
+    .permission-list li:before, .usage-list li:before, .rights-list li:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #2b7a5c;
+      font-weight: 600;
+    }
+
+    .permission-badge {
+      background: #eef3f0;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-weight: 500;
+      padding: 0.2rem 0.5rem;
+      border-radius: 12px;
+      font-size: 0.85rem;
+      color: #1b5e3f;
+      display: inline-block;
+      margin-right: 0.5rem;
+    }
+
+    .inline-code {
+      background: #eef2f5;
+      padding: 0.2rem 0.4rem;
+      border-radius: 10px;
+      font-family: monospace;
+      font-size: 0.9rem;
+      color: #1f5e3a;
+    }
+
+    .contact-card {
+      background: #f1f6f3;
+      border-radius: 1.5rem;
+      padding: 1.2rem 1.5rem;
+      margin-top: 1rem;
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.75rem;
+      border: 1px solid #dde5df;
+    }
+
+    .contact-email {
+      font-size: 1.1rem;
+      font-weight: 500;
+      background: white;
+      padding: 0.4rem 1rem;
+      border-radius: 40px;
+      color: #1f543f;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: 0.2s;
+      border: 1px solid #cbdcd2;
+    }
+
+    .contact-email:hover {
+      background: #e6f0ea;
+      border-color: #9bb9aa;
+      transform: translateY(-1px);
+    }
+
+    hr {
+      margin: 1rem 0;
+      border: none;
+      height: 1px;
+      background: linear-gradient(to right, #e0e6ed, transparent);
+    }
+
+    footer {
+      background: #fafcfb;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #5f7e6b;
+      border-top: 1px solid #e3eae5;
+    }
+
+    @media (max-width: 640px) {
+      .policy-header h1 {
+        font-size: 1.9rem;
+      }
+      .policy-content {
+        padding: 1.5rem;
+      }
+      .section-title h2 {
+        font-size: 1.3rem;
+      }
+      .contact-card {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .policy-header {
+        padding: 1.8rem 1rem;
+      }
+    }
+
+    /* decorative highlight */
+    .highlight-text {
+      background: linear-gradient(120deg, #eef7f0 0%, #eef7f0 40%, transparent);
+      padding: 0 0.2rem;
+      font-weight: 500;
+    }
+
+    .badge-note {
+      font-size: 0.85rem;
+      background: #f9f3e0;
+      border-radius: 18px;
+      padding: 0.2rem 0.8rem;
+      display: inline-block;
+      color: #826c3a;
+    }
+  </style>
+</head>
+<body>
+<div class="privacy-container">
+  <div class="policy-header">
+    <h1>Privacy Policy</h1>
+    <div class="last-updated">Last updated: March 2026</div>
+    <div class="app-badge">
+      <span>Pashto Quran By ASDC</span>
+      <span>Offline-first • Audio & Tafsir</span>
+    </div>
+  </div>
+
+  <div class="policy-content">
+    <p class="policy-text" style="font-size: 1.02rem; margin-bottom: 1.5rem;">
+      This Privacy Policy applies to the <strong>Pashto Quran</strong> developed by <strong>ASDC</strong> 
+      ("we", "our", or "us"). This app is designed to provide Quran reading, Tafsir, Translation in multiple languages, Bookmarks, and related features, 
+      primarily working offline with optional online functionality.
+    </p>
+
+    <!-- Section 1 -->
+    <div class="policy-section">
+      <div class="section-title">
+
+        <h2>1. Information We Collect</h2>
+      </div>
+      <p class="policy-text">We do <strong>not</strong> collect personally identifiable information such as your name, email, or location.</p>
+      <p class="policy-text">However, the app may collect limited non-personal information automatically, including:</p>
+      <ul class="usage-list">
+        <li>Device type and Android version</li>
+        <li>App usage data (for performance improvements)</li>
+        <li>Error logs (for debugging crashes)</li>
+      </ul>
+      <div class="badge-note" style="margin-top: 0.5rem;">No personal tracking — your privacy stays protected</div>
+    </div>
+
+    <!-- Section 2: Permissions -->
+    <div class="policy-section">
+      <div class="section-title">
+
+        <h2>2. Permissions We Use</h2>
+      </div>
+      <p class="policy-text">Our app requires the following permissions to deliver a seamless Quranic experience:</p>
+      <ul class="permission-list">
+        <li>
+          <span class="permission-badge">INTERNET</span> 
+          Used to: Download Audio Recitations content & load online resources (if available)
+        </li>
+        <li>
+          <span class="permission-badge">ACCESS_NETWORK_STATE</span> 
+          Used to: Check whether the device is connected to the internet before downloading content
+        </li>
+        <li>
+          <span class="permission-badge">READ_EXTERNAL_STORAGE</span> 
+          Used to: Read downloaded tafsir files or user-saved data from your device
+        </li>
+        <li>
+          <span class="permission-badge">WRITE_EXTERNAL_STORAGE</span> 
+          Used to: Save downloaded Audio files and other content for offline use
+        </li>
+        <li>
+          <span class="permission-badge">WAKE_LOCK</span> 
+          Used to: Prevent the device from sleeping during Quran Reading
+        </li>
+      </ul>
+      <p class="policy-text policy-sub" style="margin-top: 0.5rem;">All permissions are used solely for functionality, and no data is transmitted to external servers beyond your control.</p>
+    </div>
+
+    <!-- Section 3: How we use info -->
+    <div class="policy-section">
+      <div class="section-title">
+
+        <h2>3. How We Use Information</h2>
+      </div>
+      <p class="policy-text">We use the limited collected data to:</p>
+      <ul class="usage-list">
+        <li>Improve app performance and stability</li>
+        <li>Fix bugs and crashes (via anonymous error logs)</li>
+        <li>Ensure proper functioning of downloads and offline features</li>
+      </ul>
+      <p class="policy-text">No analytics are used to build user profiles or for marketing purposes.</p>
+    </div>
+
+    <!-- Section 4: Data Storage -->
+    <div class="policy-section">
+      <div class="section-title">
+
+        <h2>4. Data Storage</h2>
+      </div>
+      <p class="policy-text">All downloaded content (such as Audio files, Quran database, tafsir) is stored <strong>locally on your device</strong>.</p>
+      <p class="policy-text">We do <strong>not</strong> upload, share, or remotely store your personal data to any server. Your bookmarks, recitation preferences, and saved files stay on your phone.</p>
+    </div>
+
+    <!-- Section 5: Third-Party Services -->
+    <div class="policy-section">
+      <div class="section-title">
+
+        <h2>5. Third-Party Services</h2>
+      </div>
+      <p class="policy-text">The app may use third-party services such as:</p>
+      <ul class="usage-list">
+        <li><span class="inline-code">Google Play Services</span> – for stability, crash reporting (Firebase Crashlytics) and, if enabled, anonymous analytics to understand general usage trends.</li>
+      </ul>
+      <p class="policy-text">These services may collect limited technical data according to their own privacy policies. We encourage you to review Google's Privacy Policy for more details. No personal identifiers are shared.</p>
+    </div>
+
+    <!-- Section 6: Data Security -->
+    <div class="policy-section">
+      <div class="section-title">
+
+        <h2>6. Data Security</h2>
+      </div>
+      <p class="policy-text">We take reasonable measures to protect your data, including using secure connections for downloads and minimizing permission scope. However, no method of transmission over the internet or electronic storage is 100% secure. We continuously strive to protect your privacy.</p>
+    </div>
+
+    <!-- Section 7: Children's Privacy -->
+    <div class="policy-section">
+      <div class="section-title">
+
+        <h2>7. Children's Privacy</h2>
+      </div>
+      <p class="policy-text">This app is suitable for users of all ages. We do not knowingly collect personal data from children. Since no personal information is collected, parents can confidently allow children to use the app. If you believe we have inadvertently collected such data, contact us and we will promptly address it.</p>
+    </div>
+
+    <!-- Section 8: Your Rights -->
+    <div class="policy-section">
+      <div class="section-title">
+
+        <h2>8. Your Rights</h2>
+      </div>
+      <p class="policy-text">You have full control over your data:</p>
+      <ul class="rights-list">
+        <li>Delete downloaded audio files, tafsir, or any stored content anytime directly from your device storage or via app settings.</li>
+        <li>Uninstall the app to remove all stored data, bookmarks and preferences completely from your device.</li>
+        <li>Revoke permissions any time from Android settings — core reading features remain available.</li>
+      </ul>
+    </div>
+
+    <!-- Section 9: Changes to Policy -->
+    <div class="policy-section">
+      <div class="section-title">
+
+        <h2>9. Changes to This Policy</h2>
+      </div>
+      <p class="policy-text">We may update this Privacy Policy from time to time to reflect changes in practices or for legal reasons. Any changes will be posted on this page, and the “Last updated” date will be revised. We encourage you to review this policy periodically.</p>
+    </div>
+
+    <!-- Section 10: Contact Us -->
+    <div class="policy-section">
+      <div class="section-title">
+
+        <h2>10. Contact Us</h2>
+      </div>
+      <p class="policy-text">If you have any questions, concerns, or requests regarding this privacy policy or the app's data practices, please reach out — we’d love to hear from you.</p>
+      <div class="contact-card">
+        <span style="font-weight: 500;">✉️ Developer support:</span>
+        <a href="mailto:dev.kdrware@gmail.com" class="contact-email">
+          📧 dev.kdrware@gmail.com
+        </a>
+        <span style="font-size: 0.85rem; color: #446b59;">We aim to respond within 2–3 business days.</span>
+      </div>
+      <hr>
+      <p class="policy-text" style="font-size: 0.9rem; margin-top: 0.5rem;"><span class="highlight-text">Your trust matters.</span> This app is built with the principle that your spiritual journey should remain private, secure, and offline-first.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span>© 2026 ASDC — Pashto Quran. All rights reserved.</span><br>
+    <span style="opacity: 0.7;">Designed for clarity & transparency. No user tracking, no data selling.</span>
+  </footer>
+</div>
+</body>
